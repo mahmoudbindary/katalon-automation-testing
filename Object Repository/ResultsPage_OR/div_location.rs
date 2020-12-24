@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_location</name>
+   <tag></tag>
+   <elementGuidId>4758961c-1b75-4fe7-aaaa-4f4ab0d7ffbd</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div._1g5ss3l</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Location'])[1]/following::div[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>_1g5ss3l</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Rome</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[@class=&quot;js-focus-visible&quot;]/body[@class=&quot;with-new-header&quot;]/div[4]/div[1]/div[1]/div[1]/div[@class=&quot;_16grqhk&quot;]/div[@class=&quot;_siy8gh&quot;]/div[@class=&quot;_1gw6tte&quot;]/header[@class=&quot;_6n0mzrr&quot;]/div[@class=&quot;_1hdzglgd&quot;]/div[@class=&quot;_1c0ocmt&quot;]/div[@class=&quot;_1i5xg6by&quot;]/div[@class=&quot;_ljad0a&quot;]/button[@class=&quot;_b2fxuo&quot;]/div[@class=&quot;_1g5ss3l&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="runAllTests" time="131.646" tests="3" failures="0" skips="0" errors="0">
+   <testsuite name="runAllTests" tests="3" failures="0" errors="0" time="131.646" skips="0" timestamp="2020-12-24 02:37:30" hostname="Mahmoud.Bindary - AVE-LAP-301.AVELABS.CAI" id="Test Suites/runAllTests">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\Mahmoud.Bindary\\Katalon Studio\\katalon-automation-testing\\Reports\\20201224_023723\\runAllTests\\20201224_023723"/>
+         <property name="logFiles" value="C:\\Users\\Mahmoud.Bindary\\Katalon Studio\\katalon-automation-testing\\Reports\\20201224_023723\\runAllTests\\20201224_023723\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Mahmoud.Bindary - AVE-LAP-301.AVELABS.CAI"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.8.1.208"/>
+         <property name="browser" value="Chrome 87.0.4280.88"/>
+         <property name="hostAddress" value="192.168.1.6"/>
+         <property name="sessionId" value="ddb2a434ca1c67112c089d2e58427664"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/verifyAppliedFilters" time="35.154" classname="Test Cases/verifyAppliedFilters" status="PASSED">
+         <system-out><![CDATA[2020-12-24 02:37:32 - [TEST_CASE][PASSED] - Test Cases/verifyAppliedFilters: Test Cases/verifyAppliedFilters
+
+2020-12-24 02:37:32 - [TEST_STEP][PASSED] - comment("Setup first test steps"): Setup first test steps
+
+2020-12-24 02:37:33 - [MESSAGE][INFO] - Setup first test steps
+
+2020-12-24 02:37:33 - [TEST_STEP][PASSED] - utilities.setupTest.setupTestData(): utilities.setupTest.setupTestData is PASSED
+
+2020-12-24 02:37:33 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-12-24 02:37:33 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-12-24 02:37:42 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.airbnb.com/'
+
+2020-12-24 02:37:44 - [MESSAGE][PASSED] - Current window maximized
+
+2020-12-24 02:37:47 - [MESSAGE][PASSED] - Navigate to 'https://www.airbnb.com/' successfully
+
+2020-12-24 02:37:49 - [MESSAGE][PASSED] - Text 'Rome, Italy' is set on object 'Object Repository/HomePage_OR/input_Location'
+
+2020-12-24 02:37:50 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/div_Add dates' is clicked on
+
+2020-12-24 02:37:51 - [MESSAGE][PASSED] - Text of object 'Object Repository/HomePage_OR/checkInDate' is: '31'
+
+2020-12-24 02:37:52 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/checkInDate' is clicked on
+
+2020-12-24 02:37:52 - [MESSAGE][PASSED] - Text of object 'Object Repository/HomePage_OR/checkOutDate' is: '7'
+
+2020-12-24 02:37:53 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/checkOutDate' is clicked on
+
+2020-12-24 02:37:54 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/div_Add guests' is clicked on
+
+2020-12-24 02:37:55 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnAdultsIncrease' is clicked on
+
+2020-12-24 02:37:55 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnAdultsIncrease' is clicked on
+
+2020-12-24 02:37:56 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnChildrenIncrease' is clicked on
+
+2020-12-24 02:37:57 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnSearch' is clicked on
+
+2020-12-24 02:38:03 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnCloseUnwantedSpansOnMap' is clicked on
+
+2020-12-24 02:38:03 - [MESSAGE][PASSED] - utilities.setupTest.setupTestData is PASSED
+
+2020-12-24 02:38:03 - [TEST_STEP][PASSED] - comment("Verify applied filters when setting test data"): Verify applied filters when setting test data
+
+2020-12-24 02:38:03 - [MESSAGE][INFO] - Verify applied filters when setting test data
+
+2020-12-24 02:38:03 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ResultsPage_OR/div_location"), filteredLocation): Actual text and expected text of test object 'Object Repository/ResultsPage_OR/div_location' are matched.
+
+2020-12-24 02:38:04 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ResultsPage_OR/div_location' are matched.
+
+2020-12-24 02:38:04 - [TEST_STEP][PASSED] - dates = getText(findTestObject("ResultsPage_OR/div_dates")): Text of object 'Object Repository/ResultsPage_OR/div_dates' is: 'Dec 31, 2020 – Jan 7, 2021'
+
+2020-12-24 02:38:04 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/div_dates' is: 'Dec 31, 2020 – Jan 7, 2021'
+
+2020-12-24 02:38:04 - [TEST_STEP][PASSED] - Assert.assertTrue(dates.contains(checkInExactDate)): null
+
+2020-12-24 02:38:04 - [TEST_STEP][PASSED] - Assert.assertTrue(dates.contains(checkOutExactDate)): null
+
+2020-12-24 02:38:04 - [TEST_STEP][PASSED] - verifyElementText(findTestObject("ResultsPage_OR/div_guests"), guestsNumString): Actual text and expected text of test object 'Object Repository/ResultsPage_OR/div_guests' are matched.
+
+2020-12-24 02:38:05 - [MESSAGE][PASSED] - Actual text and expected text of test object 'Object Repository/ResultsPage_OR/div_guests' are matched.
+
+2020-12-24 02:38:05 - [TEST_STEP][PASSED] - propertiesOnFirstRow = getText(findTestObject("Object Repository/ResultsPage_OR/firstRawOfProperties")): Text of object 'Object Repository/ResultsPage_OR/firstRawOfProperties' is: '4 guests · 2 bedrooms · 2 beds · 2.5 baths'
+
+2020-12-24 02:38:05 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstRawOfProperties' is: '4 guests · 2 bedrooms · 2 beds · 2.5 baths'
+
+2020-12-24 02:38:05 - [TEST_STEP][PASSED] - guestsNumOnFirstRow = Integer.parseInt(propertiesOnFirstRow.split(" ")[0]): null
+
+2020-12-24 02:38:05 - [TEST_STEP][PASSED] - verifyGreaterThanOrEqual(guestsNumOnFirstRow, guestsNum): Actual number '4' is greater than or equal to expected number '3'
+
+2020-12-24 02:38:05 - [MESSAGE][PASSED] - Actual number '4' is greater than or equal to expected number '3'
+
+2020-12-24 02:38:05 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-12-24 02:38:07 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/verifyResultsMatchExtraFilters" time="54.061" classname="Test Cases/verifyResultsMatchExtraFilters" status="PASSED">
+         <system-out><![CDATA[2020-12-24 02:38:07 - [TEST_CASE][PASSED] - Test Cases/verifyResultsMatchExtraFilters: Test Cases/verifyResultsMatchExtraFilters
+
+2020-12-24 02:38:07 - [TEST_STEP][PASSED] - comment("Setup first test steps"): Setup first test steps
+
+2020-12-24 02:38:07 - [MESSAGE][INFO] - Setup first test steps
+
+2020-12-24 02:38:07 - [TEST_STEP][PASSED] - utilities.setupTest.setupTestData(): utilities.setupTest.setupTestData is PASSED
+
+2020-12-24 02:38:07 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-12-24 02:38:07 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-12-24 02:38:15 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.airbnb.com/'
+
+2020-12-24 02:38:17 - [MESSAGE][PASSED] - Current window maximized
+
+2020-12-24 02:38:21 - [MESSAGE][PASSED] - Navigate to 'https://www.airbnb.com/' successfully
+
+2020-12-24 02:38:23 - [MESSAGE][PASSED] - Text 'Rome, Italy' is set on object 'Object Repository/HomePage_OR/input_Location'
+
+2020-12-24 02:38:25 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/div_Add dates' is clicked on
+
+2020-12-24 02:38:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/HomePage_OR/checkInDate' is: '31'
+
+2020-12-24 02:38:27 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/checkInDate' is clicked on
+
+2020-12-24 02:38:27 - [MESSAGE][PASSED] - Text of object 'Object Repository/HomePage_OR/checkOutDate' is: '7'
+
+2020-12-24 02:38:28 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/checkOutDate' is clicked on
+
+2020-12-24 02:38:28 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/div_Add guests' is clicked on
+
+2020-12-24 02:38:29 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnAdultsIncrease' is clicked on
+
+2020-12-24 02:38:30 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnAdultsIncrease' is clicked on
+
+2020-12-24 02:38:31 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnChildrenIncrease' is clicked on
+
+2020-12-24 02:38:31 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnSearch' is clicked on
+
+2020-12-24 02:38:38 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnCloseUnwantedSpansOnMap' is clicked on
+
+2020-12-24 02:38:38 - [MESSAGE][PASSED] - utilities.setupTest.setupTestData is PASSED
+
+2020-12-24 02:38:38 - [TEST_STEP][PASSED] - comment("Verify applied extra filters"): Verify applied extra filters
+
+2020-12-24 02:38:38 - [MESSAGE][INFO] - Verify applied extra filters
+
+2020-12-24 02:38:38 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/btnMoreFilters")): Object: 'Object Repository/ResultsPage_OR/btnMoreFilters' is clicked on
+
+2020-12-24 02:38:40 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnMoreFilters' is clicked on
+
+2020-12-24 02:38:40 - [TEST_STEP][PASSED] - for (def i : (1..internal.GlobalVariable.bedroomsNum)): Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:40 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/btnBedroomsIncrease")): Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:41 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:41 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/btnBedroomsIncrease")): Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:41 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:41 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/btnBedroomsIncrease")): Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:42 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:42 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/btnBedroomsIncrease")): Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:42 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:42 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/btnBedroomsIncrease")): Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:43 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnBedroomsIncrease' is clicked on
+
+2020-12-24 02:38:43 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/btnPoolToggle")): Object: 'Object Repository/ResultsPage_OR/btnPoolToggle' is clicked on
+
+2020-12-24 02:38:44 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnPoolToggle' is clicked on
+
+2020-12-24 02:38:44 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/btnShowStays")): Object: 'Object Repository/ResultsPage_OR/btnShowStays' is clicked on
+
+2020-12-24 02:38:46 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnShowStays' is clicked on
+
+2020-12-24 02:38:46 - [TEST_STEP][PASSED] - propertiesOnFirstRow = getText(findTestObject("Object Repository/ResultsPage_OR/firstRawOfProperties")): Text of object 'Object Repository/ResultsPage_OR/firstRawOfProperties' is: '14 guests · 6 bedrooms · 10 beds · 5 baths'
+
+2020-12-24 02:38:49 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstRawOfProperties' is: '14 guests · 6 bedrooms · 10 beds · 5 baths'
+
+2020-12-24 02:38:49 - [TEST_STEP][PASSED] - filters = propertiesOnFirstRow.split("·"): null
+
+2020-12-24 02:38:49 - [TEST_STEP][PASSED] - bedroomsNumOnFirstRow = Integer.parseInt(trim().split(" ")[0]): null
+
+2020-12-24 02:38:49 - [TEST_STEP][PASSED] - verifyGreaterThanOrEqual(bedroomsNumOnFirstRow, bedroomsNum): Actual number '6' is greater than or equal to expected number '5'
+
+2020-12-24 02:38:49 - [MESSAGE][PASSED] - Actual number '6' is greater than or equal to expected number '5'
+
+2020-12-24 02:38:49 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/firstPropertyLink")): Object: 'Object Repository/ResultsPage_OR/firstPropertyLink' is clicked on
+
+2020-12-24 02:38:50 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/firstPropertyLink' is clicked on
+
+2020-12-24 02:38:50 - [TEST_STEP][PASSED] - switchToWindowIndex(1): Switched to window with index: '1'
+
+2020-12-24 02:38:50 - [MESSAGE][PASSED] - Switched to window with index: '1'
+
+2020-12-24 02:38:50 - [TEST_STEP][PASSED] - verifyTextPresent("pool", false): Text 'pool' is present on page 
+
+2020-12-24 02:39:00 - [MESSAGE][PASSED] - Text 'pool' is present on page 
+
+2020-12-24 02:39:00 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-12-24 02:39:01 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/verifyPropertyDisplayedOnMap" time="40.784" classname="Test Cases/verifyPropertyDisplayedOnMap" status="PASSED">
+         <system-out><![CDATA[2020-12-24 02:39:01 - [TEST_CASE][PASSED] - Test Cases/verifyPropertyDisplayedOnMap: Test Cases/verifyPropertyDisplayedOnMap
+
+2020-12-24 02:39:01 - [TEST_STEP][PASSED] - comment("Setup first test steps"): Setup first test steps
+
+2020-12-24 02:39:01 - [MESSAGE][INFO] - Setup first test steps
+
+2020-12-24 02:39:01 - [TEST_STEP][PASSED] - utilities.setupTest.setupTestData(): utilities.setupTest.setupTestData is PASSED
+
+2020-12-24 02:39:01 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-12-24 02:39:01 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-12-24 02:39:11 - [MESSAGE][PASSED] - Browser is opened with url: 'https://www.airbnb.com/'
+
+2020-12-24 02:39:13 - [MESSAGE][PASSED] - Current window maximized
+
+2020-12-24 02:39:15 - [MESSAGE][PASSED] - Navigate to 'https://www.airbnb.com/' successfully
+
+2020-12-24 02:39:17 - [MESSAGE][PASSED] - Text 'Rome, Italy' is set on object 'Object Repository/HomePage_OR/input_Location'
+
+2020-12-24 02:39:19 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/div_Add dates' is clicked on
+
+2020-12-24 02:39:20 - [MESSAGE][PASSED] - Text of object 'Object Repository/HomePage_OR/checkInDate' is: '31'
+
+2020-12-24 02:39:21 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/checkInDate' is clicked on
+
+2020-12-24 02:39:21 - [MESSAGE][PASSED] - Text of object 'Object Repository/HomePage_OR/checkOutDate' is: '7'
+
+2020-12-24 02:39:22 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/checkOutDate' is clicked on
+
+2020-12-24 02:39:23 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/div_Add guests' is clicked on
+
+2020-12-24 02:39:24 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnAdultsIncrease' is clicked on
+
+2020-12-24 02:39:24 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnAdultsIncrease' is clicked on
+
+2020-12-24 02:39:25 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnChildrenIncrease' is clicked on
+
+2020-12-24 02:39:26 - [MESSAGE][PASSED] - Object: 'Object Repository/HomePage_OR/btnSearch' is clicked on
+
+2020-12-24 02:39:32 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/btnCloseUnwantedSpansOnMap' is clicked on
+
+2020-12-24 02:39:32 - [MESSAGE][PASSED] - utilities.setupTest.setupTestData is PASSED
+
+2020-12-24 02:39:32 - [TEST_STEP][PASSED] - comment("Verify property color changes on map when hover over the property link on search list"): Verify property color changes on map when hover over the property link on search list
+
+2020-12-24 02:39:32 - [MESSAGE][INFO] - Verify property color changes on map when hover over the property link on search list
+
+2020-12-24 02:39:32 - [TEST_STEP][PASSED] - mouseOver(findTestObject("ResultsPage_OR/firstPropertyLink")): Object: 'Object Repository/ResultsPage_OR/firstPropertyLink' is hovered
+
+2020-12-24 02:39:33 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/firstPropertyLink' is hovered
+
+2020-12-24 02:39:33 - [TEST_STEP][PASSED] - firstPropertyOnMapStyle = getAttribute(findTestObject("Object Repository/ResultsPage_OR/firstPropertyOnMapStyle"), "style"): Attribute 'style' of object 'Object Repository/ResultsPage_OR/firstPropertyOnMapStyle' is: 'align-items: center; background-color: rgb(34, 34, 34); border-radius: 28px; box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.18) 0px 1px 2px; color: rgb(255, 255, 255); display: flex; height: 28px; justify-content: center; padding: 0px 8px; position: relative; white-space: nowrap;'
+
+2020-12-24 02:39:35 - [MESSAGE][PASSED] - Attribute 'style' of object 'Object Repository/ResultsPage_OR/firstPropertyOnMapStyle' is: 'align-items: center; background-color: rgb(34, 34, 34); border-radius: 28px; box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.18) 0px 1px 2px; color: rgb(255, 255, 255); display: flex; height: 28px; justify-content: center; padding: 0px 8px; position: relative; white-space: nowrap;'
+
+2020-12-24 02:39:35 - [TEST_STEP][PASSED] - backgroundColors = split(";")[1].trim(): null
+
+2020-12-24 02:39:35 - [TEST_STEP][PASSED] - verifyMatch(backgroundColors, expectedBackgroundColors, false): Actual text 'background-color: rgb(34, 34, 34)' and expected text 'background-color: rgb(34, 34, 34)' are matched 
+
+2020-12-24 02:39:35 - [MESSAGE][PASSED] - Actual text 'background-color: rgb(34, 34, 34)' and expected text 'background-color: rgb(34, 34, 34)' are matched 
+
+2020-12-24 02:39:35 - [TEST_STEP][PASSED] - comment("Verify properties are the same on search list and map"): Verify properties are the same on search list and map
+
+2020-12-24 02:39:35 - [MESSAGE][INFO] - Verify properties are the same on search list and map
+
+2020-12-24 02:39:35 - [TEST_STEP][PASSED] - click(findTestObject("ResultsPage_OR/firstPropertyOnMap")): Object: 'Object Repository/ResultsPage_OR/firstPropertyOnMap' is clicked on
+
+2020-12-24 02:39:35 - [MESSAGE][PASSED] - Object: 'Object Repository/ResultsPage_OR/firstPropertyOnMap' is clicked on
+
+2020-12-24 02:39:35 - [TEST_STEP][PASSED] - ratingString = getText(findTestObject("ResultsPage_OR/firstPropertyRating")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyRating' is: '4.38'
+
+2020-12-24 02:39:36 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyRating' is: '4.38'
+
+2020-12-24 02:39:36 - [TEST_STEP][PASSED] - ratingOnMapString = getText(findTestObject("ResultsPage_OR/firstPropertyRatingOnMap")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyRatingOnMap' is: '4.38'
+
+2020-12-24 02:39:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyRatingOnMap' is: '4.38'
+
+2020-12-24 02:39:37 - [TEST_STEP][PASSED] - verifyMatch(ratingOnMapString, ratingString, false): Actual text '4.38' and expected text '4.38' are matched 
+
+2020-12-24 02:39:37 - [MESSAGE][PASSED] - Actual text '4.38' and expected text '4.38' are matched 
+
+2020-12-24 02:39:37 - [TEST_STEP][PASSED] - nameString = getText(findTestObject("ResultsPage_OR/firstPropertyName")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyName' is: 'Piazza Navona Penthouse, nel cuore di Roma!'
+
+2020-12-24 02:39:37 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyName' is: 'Piazza Navona Penthouse, nel cuore di Roma!'
+
+2020-12-24 02:39:37 - [TEST_STEP][PASSED] - nameOnMapString = getText(findTestObject("ResultsPage_OR/firstPropertyNameOnMap")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyNameOnMap' is: 'Piazza Navona Penthouse, nel cuore di Roma!'
+
+2020-12-24 02:39:38 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyNameOnMap' is: 'Piazza Navona Penthouse, nel cuore di Roma!'
+
+2020-12-24 02:39:38 - [TEST_STEP][PASSED] - verifyMatch(nameOnMapString, nameString, false): Actual text 'Piazza Navona Penthouse, nel cuore di Roma!' and expected text 'Piazza Navona Penthouse, nel cuore di Roma!' are matched 
+
+2020-12-24 02:39:38 - [MESSAGE][PASSED] - Actual text 'Piazza Navona Penthouse, nel cuore di Roma!' and expected text 'Piazza Navona Penthouse, nel cuore di Roma!' are matched 
+
+2020-12-24 02:39:38 - [TEST_STEP][PASSED] - priceString = getText(findTestObject("ResultsPage_OR/firstPropertyPrice")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyPrice' is: 'Previous price:
+$54
+Discounted price:
+$42'
+
+2020-12-24 02:39:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyPrice' is: 'Previous price:
+$54
+Discounted price:
+$42'
+
+2020-12-24 02:39:39 - [TEST_STEP][PASSED] - priceOnMapString = getText(findTestObject("ResultsPage_OR/firstPropertyPriceOnMap")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyPriceOnMap' is: 'Previous price:
+$54
+Discounted price:
+$42'
+
+2020-12-24 02:39:39 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyPriceOnMap' is: 'Previous price:
+$54
+Discounted price:
+$42'
+
+2020-12-24 02:39:39 - [TEST_STEP][PASSED] - verifyMatch(priceOnMapString, priceString, false): Actual text 'Previous price:
+$54
+Discounted price:
+$42' and expected text 'Previous price:
+$54
+Discounted price:
+$42' are matched 
+
+2020-12-24 02:39:39 - [MESSAGE][PASSED] - Actual text 'Previous price:
+$54
+Discounted price:
+$42' and expected text 'Previous price:
+$54
+Discounted price:
+$42' are matched 
+
+2020-12-24 02:39:39 - [TEST_STEP][PASSED] - cityOnMapString = getText(findTestObject("ResultsPage_OR/firstPropertyCityOnMap")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyCityOnMap' is: ' · Roma'
+
+2020-12-24 02:39:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyCityOnMap' is: ' · Roma'
+
+2020-12-24 02:39:40 - [TEST_STEP][PASSED] - cityOnMapString = split("·")[1].trim(): null
+
+2020-12-24 02:39:40 - [TEST_STEP][PASSED] - typeOnMapString = getText(findTestObject("ResultsPage_OR/firstPropertyTypeOnMap")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyTypeOnMap' is: 'Entire apartment'
+
+2020-12-24 02:39:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyTypeOnMap' is: 'Entire apartment'
+
+2020-12-24 02:39:40 - [TEST_STEP][PASSED] - typeAndCityString = getText(findTestObject("ResultsPage_OR/firstPropertyTypeAndCity")): Text of object 'Object Repository/ResultsPage_OR/firstPropertyTypeAndCity' is: 'Entire apartment in Roma'
+
+2020-12-24 02:39:40 - [MESSAGE][PASSED] - Text of object 'Object Repository/ResultsPage_OR/firstPropertyTypeAndCity' is: 'Entire apartment in Roma'
+
+2020-12-24 02:39:40 - [TEST_STEP][PASSED] - Assert.assertTrue(typeAndCityString.contains(cityOnMapString)): null
+
+2020-12-24 02:39:40 - [TEST_STEP][PASSED] - Assert.assertTrue(typeAndCityString.contains(typeOnMapString)): null
+
+2020-12-24 02:39:40 - [TEST_STEP][PASSED] - closeBrowser(STOP_ON_FAILURE): Browser is closed
+
+2020-12-24 02:39:42 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-12-24 02:37:30 - [TEST_SUITE][INCOMPLETE] - runAllTests: null]]></system-out>
+      <system-err><![CDATA[2020-12-24 02:37:30 - [TEST_SUITE][INCOMPLETE] - runAllTests: null]]></system-err>
+   </testsuite>
+</testsuites>

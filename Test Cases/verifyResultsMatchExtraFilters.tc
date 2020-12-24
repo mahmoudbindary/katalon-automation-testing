@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verifyResultsMatchExtraFilters</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b4f3237d-7ba8-4821-94c1-7d8a54c015c1</testCaseGuid>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>efa849d1-ca6e-4ea2-ae14-f3b5a7615456</id>
+      <masked>false</masked>
+      <name>bedroomsNumOnFirstRow</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>10cef4d6-fdf2-4230-8211-283786c75250</id>
+      <masked>false</masked>
+      <name>propertiesOnFirstRow</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>f495f0fe-61e7-469c-8ac7-865a20442f83</id>
+      <masked>false</masked>
+      <name>filters</name>
+   </variable>
+</TestCaseEntity>

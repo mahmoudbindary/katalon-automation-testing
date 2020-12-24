@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>verifyAppliedFilters</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2ee7c572-26bc-421c-94a1-f7eec9c73109</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3358ed3f-de78-4342-a248-3eef00f329ca</id>
+      <masked>false</masked>
+      <name>dates</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bea8520f-f91e-4b2f-afd8-bac4135e47db</id>
+      <masked>false</masked>
+      <name>propertiesOnFirstRow</name>
+   </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>cf95b5de-a686-4462-ac66-12b4f8c80106</id>
+      <masked>false</masked>
+      <name>guestsNumOnFirstRow</name>
+   </variable>
+</TestCaseEntity>

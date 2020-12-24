@@ -1,0 +1,60 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+runAllTests,Chrome 87.0.4280.88,,,2020-12-24 02:37:30,2020-12-24 02:39:42,2m - 11.646s,PASSED
+,,,,,,,
+Test Cases/verifyAppliedFilters,Chrome 87.0.4280.88,,,2020-12-24 02:37:32,2020-12-24 02:38:07,35.154s,PASSED
+"comment(""Setup first test steps"")",Chrome 87.0.4280.88,,,2020-12-24 02:37:32,2020-12-24 02:37:33,0.095s,PASSED
+utilities.setupTest.setupTestData(),Chrome 87.0.4280.88,,,2020-12-24 02:37:33,2020-12-24 02:38:03,30.545s,PASSED
+"comment(""Verify applied filters when setting test data"")",Chrome 87.0.4280.88,,,2020-12-24 02:38:03,2020-12-24 02:38:03,0.003s,PASSED
+"verifyElementText(findTestObject(""ResultsPage_OR/div_location""), filteredLocation)",Chrome 87.0.4280.88,,,2020-12-24 02:38:03,2020-12-24 02:38:04,0.448s,PASSED
+"dates = getText(findTestObject(""ResultsPage_OR/div_dates""))",Chrome 87.0.4280.88,,,2020-12-24 02:38:04,2020-12-24 02:38:04,0.475s,PASSED
+Assert.assertTrue(dates.contains(checkInExactDate)),Chrome 87.0.4280.88,,,2020-12-24 02:38:04,2020-12-24 02:38:04,0.019s,PASSED
+Assert.assertTrue(dates.contains(checkOutExactDate)),Chrome 87.0.4280.88,,,2020-12-24 02:38:04,2020-12-24 02:38:04,0.001s,PASSED
+"verifyElementText(findTestObject(""ResultsPage_OR/div_guests""), guestsNumString)",Chrome 87.0.4280.88,,,2020-12-24 02:38:04,2020-12-24 02:38:05,0.908s,PASSED
+"propertiesOnFirstRow = getText(findTestObject(""Object Repository/ResultsPage_OR/firstRawOfProperties""))",Chrome 87.0.4280.88,,,2020-12-24 02:38:05,2020-12-24 02:38:05,0.491s,PASSED
+"guestsNumOnFirstRow = Integer.parseInt(propertiesOnFirstRow.split("" "")[0])",Chrome 87.0.4280.88,,,2020-12-24 02:38:05,2020-12-24 02:38:05,0.013s,PASSED
+"verifyGreaterThanOrEqual(guestsNumOnFirstRow, guestsNum)",Chrome 87.0.4280.88,,,2020-12-24 02:38:05,2020-12-24 02:38:05,0.024s,PASSED
+closeBrowser(),Chrome 87.0.4280.88,,,2020-12-24 02:38:05,2020-12-24 02:38:07,1.305s,PASSED
+,,,,,,,
+Test Cases/verifyResultsMatchExtraFilters,Chrome 87.0.4280.88,,,2020-12-24 02:38:07,2020-12-24 02:39:01,54.061s,PASSED
+"comment(""Setup first test steps"")",Chrome 87.0.4280.88,,,2020-12-24 02:38:07,2020-12-24 02:38:07,0.003s,PASSED
+utilities.setupTest.setupTestData(),Chrome 87.0.4280.88,,,2020-12-24 02:38:07,2020-12-24 02:38:38,31.076s,PASSED
+"comment(""Verify applied extra filters"")",Chrome 87.0.4280.88,,,2020-12-24 02:38:38,2020-12-24 02:38:38,0.003s,PASSED
+"click(findTestObject(""ResultsPage_OR/btnMoreFilters""))",Chrome 87.0.4280.88,,,2020-12-24 02:38:38,2020-12-24 02:38:40,1.378s,PASSED
+for (def i : (1..internal.GlobalVariable.bedroomsNum)),Chrome 87.0.4280.88,,,2020-12-24 02:38:40,2020-12-24 02:38:43,3.449s,PASSED
+"click(findTestObject(""ResultsPage_OR/btnPoolToggle""))",Chrome 87.0.4280.88,,,2020-12-24 02:38:43,2020-12-24 02:38:44,0.873s,PASSED
+"click(findTestObject(""ResultsPage_OR/btnShowStays""))",Chrome 87.0.4280.88,,,2020-12-24 02:38:44,2020-12-24 02:38:46,2.338s,PASSED
+"propertiesOnFirstRow = getText(findTestObject(""Object Repository/ResultsPage_OR/firstRawOfProperties""))",Chrome 87.0.4280.88,,,2020-12-24 02:38:46,2020-12-24 02:38:49,2.642s,PASSED
+"filters = propertiesOnFirstRow.split(""·"")",Chrome 87.0.4280.88,,,2020-12-24 02:38:49,2020-12-24 02:38:49,0.001s,PASSED
+"bedroomsNumOnFirstRow = Integer.parseInt(trim().split("" "")[0])",Chrome 87.0.4280.88,,,2020-12-24 02:38:49,2020-12-24 02:38:49,0.001s,PASSED
+"verifyGreaterThanOrEqual(bedroomsNumOnFirstRow, bedroomsNum)",Chrome 87.0.4280.88,,,2020-12-24 02:38:49,2020-12-24 02:38:49,0.006s,PASSED
+"click(findTestObject(""ResultsPage_OR/firstPropertyLink""))",Chrome 87.0.4280.88,,,2020-12-24 02:38:49,2020-12-24 02:38:50,1.110s,PASSED
+switchToWindowIndex(1),Chrome 87.0.4280.88,,,2020-12-24 02:38:50,2020-12-24 02:38:50,0.131s,PASSED
+"verifyTextPresent(""pool"", false)",Chrome 87.0.4280.88,,,2020-12-24 02:38:50,2020-12-24 02:39:00,9.361s,PASSED
+closeBrowser(),Chrome 87.0.4280.88,,,2020-12-24 02:39:00,2020-12-24 02:39:01,1.316s,PASSED
+,,,,,,,
+Test Cases/verifyPropertyDisplayedOnMap,Chrome 87.0.4280.88,,,2020-12-24 02:39:01,2020-12-24 02:39:42,40.784s,PASSED
+"comment(""Setup first test steps"")",Chrome 87.0.4280.88,,,2020-12-24 02:39:01,2020-12-24 02:39:01,0.003s,PASSED
+utilities.setupTest.setupTestData(),Chrome 87.0.4280.88,,,2020-12-24 02:39:01,2020-12-24 02:39:32,30.902s,PASSED
+"comment(""Verify property color changes on map when hover over the property link on search list"")",Chrome 87.0.4280.88,,,2020-12-24 02:39:32,2020-12-24 02:39:32,0.004s,PASSED
+"mouseOver(findTestObject(""ResultsPage_OR/firstPropertyLink""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:32,2020-12-24 02:39:33,0.984s,PASSED
+"firstPropertyOnMapStyle = getAttribute(findTestObject(""Object Repository/ResultsPage_OR/firstPropertyOnMapStyle""), ""style"")",Chrome 87.0.4280.88,,,2020-12-24 02:39:33,2020-12-24 02:39:35,1.521s,PASSED
+"backgroundColors = split("";"")[1].trim()",Chrome 87.0.4280.88,,,2020-12-24 02:39:35,2020-12-24 02:39:35,0.000s,PASSED
+"verifyMatch(backgroundColors, expectedBackgroundColors, false)",Chrome 87.0.4280.88,,,2020-12-24 02:39:35,2020-12-24 02:39:35,0.011s,PASSED
+"comment(""Verify properties are the same on search list and map"")",Chrome 87.0.4280.88,,,2020-12-24 02:39:35,2020-12-24 02:39:35,0.004s,PASSED
+"click(findTestObject(""ResultsPage_OR/firstPropertyOnMap""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:35,2020-12-24 02:39:35,0.678s,PASSED
+"ratingString = getText(findTestObject(""ResultsPage_OR/firstPropertyRating""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:35,2020-12-24 02:39:36,0.656s,PASSED
+"ratingOnMapString = getText(findTestObject(""ResultsPage_OR/firstPropertyRatingOnMap""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:36,2020-12-24 02:39:37,0.588s,PASSED
+"verifyMatch(ratingOnMapString, ratingString, false)",Chrome 87.0.4280.88,,,2020-12-24 02:39:37,2020-12-24 02:39:37,0.006s,PASSED
+"nameString = getText(findTestObject(""ResultsPage_OR/firstPropertyName""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:37,2020-12-24 02:39:37,0.754s,PASSED
+"nameOnMapString = getText(findTestObject(""ResultsPage_OR/firstPropertyNameOnMap""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:37,2020-12-24 02:39:38,0.529s,PASSED
+"verifyMatch(nameOnMapString, nameString, false)",Chrome 87.0.4280.88,,,2020-12-24 02:39:38,2020-12-24 02:39:38,0.008s,PASSED
+"priceString = getText(findTestObject(""ResultsPage_OR/firstPropertyPrice""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:38,2020-12-24 02:39:39,0.645s,PASSED
+"priceOnMapString = getText(findTestObject(""ResultsPage_OR/firstPropertyPriceOnMap""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:39,2020-12-24 02:39:39,0.501s,PASSED
+"verifyMatch(priceOnMapString, priceString, false)",Chrome 87.0.4280.88,,,2020-12-24 02:39:39,2020-12-24 02:39:39,0.002s,PASSED
+"cityOnMapString = getText(findTestObject(""ResultsPage_OR/firstPropertyCityOnMap""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:39,2020-12-24 02:39:40,0.397s,PASSED
+"cityOnMapString = split(""·"")[1].trim()",Chrome 87.0.4280.88,,,2020-12-24 02:39:40,2020-12-24 02:39:40,0.001s,PASSED
+"typeOnMapString = getText(findTestObject(""ResultsPage_OR/firstPropertyTypeOnMap""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:40,2020-12-24 02:39:40,0.503s,PASSED
+"typeAndCityString = getText(findTestObject(""ResultsPage_OR/firstPropertyTypeAndCity""))",Chrome 87.0.4280.88,,,2020-12-24 02:39:40,2020-12-24 02:39:40,0.420s,PASSED
+Assert.assertTrue(typeAndCityString.contains(cityOnMapString)),Chrome 87.0.4280.88,,,2020-12-24 02:39:40,2020-12-24 02:39:40,0.001s,PASSED
+Assert.assertTrue(typeAndCityString.contains(typeOnMapString)),Chrome 87.0.4280.88,,,2020-12-24 02:39:40,2020-12-24 02:39:40,0.001s,PASSED
+closeBrowser(STOP_ON_FAILURE),Chrome 87.0.4280.88,,,2020-12-24 02:39:40,2020-12-24 02:39:42,1.156s,PASSED
